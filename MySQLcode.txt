@@ -1,0 +1,13 @@
+
+CREATE DATABASE  ex;
+
+
+USE ex;
+
+-- Create the table for storing expenses
+CREATE TABLE  expenses (
+    expenseId INT PRIMARY KEY,
+    amount DECIMAL(10, 2) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    date TIMESTAMP NOT NULL
+);
